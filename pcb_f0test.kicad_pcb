@@ -533,7 +533,7 @@
     (at 71 63 90)
     (descr "RGB led, 0603")
     (path /57548A5C)
-    (fp_text reference LD1 (at 0 -1.15 90) (layer F.SilkS) hide
+    (fp_text reference LD6 (at 0 -1.15 90) (layer F.SilkS) hide
       (effects (font (size 0.20066 0.20066) (thickness 0.04064)))
     )
     (fp_text value RGB (at 0 1.15 90) (layer F.SilkS) hide
@@ -571,7 +571,7 @@
     (at 48.5 63 90)
     (descr "RGB led, 0603")
     (path /57549913)
-    (fp_text reference LD2 (at 0 -1.15 90) (layer F.SilkS) hide
+    (fp_text reference LD1 (at 0 -1.15 90) (layer F.SilkS) hide
       (effects (font (size 0.20066 0.20066) (thickness 0.04064)))
     )
     (fp_text value RGB (at 0 1.15 90) (layer F.SilkS) hide
@@ -609,7 +609,7 @@
     (at 53 63 90)
     (descr "RGB led, 0603")
     (path /57549EB8)
-    (fp_text reference LD3 (at 0 -1.15 90) (layer F.SilkS) hide
+    (fp_text reference LD2 (at 0 -1.15 90) (layer F.SilkS) hide
       (effects (font (size 0.20066 0.20066) (thickness 0.04064)))
     )
     (fp_text value RGB (at 0 1.15 90) (layer F.SilkS) hide
@@ -647,7 +647,7 @@
     (at 57.5 63 90)
     (descr "RGB led, 0603")
     (path /57549EE9)
-    (fp_text reference LD4 (at 0 -1.15 90) (layer F.SilkS) hide
+    (fp_text reference LD3 (at 0 -1.15 90) (layer F.SilkS) hide
       (effects (font (size 0.20066 0.20066) (thickness 0.04064)))
     )
     (fp_text value RGB (at 0 1.15 90) (layer F.SilkS) hide
@@ -685,7 +685,7 @@
     (at 62 63 90)
     (descr "RGB led, 0603")
     (path /5754A276)
-    (fp_text reference LD5 (at 0 -1.15 90) (layer F.SilkS) hide
+    (fp_text reference LD4 (at 0 -1.15 90) (layer F.SilkS) hide
       (effects (font (size 0.20066 0.20066) (thickness 0.04064)))
     )
     (fp_text value RGB (at 0 1.15 90) (layer F.SilkS) hide
@@ -723,7 +723,7 @@
     (at 66.5 63 90)
     (descr "RGB led, 0603")
     (path /5754A2A7)
-    (fp_text reference LD6 (at 0 -1.15 90) (layer F.SilkS) hide
+    (fp_text reference LD5 (at 0 -1.15 90) (layer F.SilkS) hide
       (effects (font (size 0.20066 0.20066) (thickness 0.04064)))
     )
     (fp_text value RGB (at 0 1.15 90) (layer F.SilkS) hide
