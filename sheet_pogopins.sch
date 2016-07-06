@@ -66,19 +66,6 @@ F 3 "" H 4400 2800 60  0000 C CNN
 	1    4400 2800
 	-1   0    0    1   
 $EndComp
-$Comp
-L conn_03z03 P4
-U 1 1 576FB8FA
-P 2100 2500
-F 0 "P4" H 1622 2430 60  0000 R CNN
-F 1 "conn_03z03" H 1622 2536 60  0000 R CNN
-F 2 "knielsenlib:pogopins_3x3_TH" H 2100 2500 60  0001 C CNN
-F 3 "" H 2100 2500 60  0000 C CNN
-	1    2100 2500
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2550 2900 2800 2900
 NoConn ~ 4050 2400
 Wire Wire Line
 	4050 2500 2550 2500
@@ -310,8 +297,6 @@ tg_pwr
 Text Label 1800 4350 0    60   ~ 0
 pogo_gnd
 Text Label 3700 4450 0    60   ~ 0
-pogo_gnd
-Text Label 2550 2900 0    60   ~ 0
 pogo_gnd
 Text Label 3700 2300 0    60   ~ 0
 pogo_gnd
