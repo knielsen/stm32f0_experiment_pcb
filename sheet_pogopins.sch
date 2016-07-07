@@ -53,7 +53,7 @@ F 1 "Jumper_NC_Small" H 3360 2840 50  0001 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3350 2900 50  0001 C CNN
 F 3 "" H 3350 2900 50  0000 C CNN
 	1    3350 2900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L KNUSB U3
@@ -237,8 +237,6 @@ Wire Wire Line
 	2650 4350 3150 4350
 Wire Wire Line
 	3150 4250 3150 4450
-Wire Wire Line
-	3150 4250 3250 4250
 $Comp
 L Jumper_NC_Small JP3
 U 1 1 57727791
@@ -248,7 +246,7 @@ F 1 "Jumper_NC_Small" H 3260 4190 50  0001 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3250 4250 50  0001 C CNN
 F 3 "" H 3250 4250 50  0000 C CNN
 	1    3250 4250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Jumper_NC_Small JP4
@@ -259,7 +257,7 @@ F 1 "Jumper_NC_Small" H 3260 4390 50  0001 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3250 4450 50  0001 C CNN
 F 3 "" H 3250 4450 50  0000 C CNN
 	1    3250 4450
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Connection ~ 3150 4350
 $Comp
@@ -313,4 +311,99 @@ F 3 "" H 3600 2300 50  0000 C CNN
 	1    3600 2300
 	1    0    0    -1  
 $EndComp
+$Comp
+L LP2985LV U5
+U 1 1 577E7501
+P 6900 2200
+F 0 "U5" H 7100 1750 60  0000 C CNN
+F 1 "LP2985LV" H 6900 2650 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6900 2200 60  0001 C CNN
+F 3 "" H 6900 2200 60  0001 C CNN
+	1    6900 2200
+	1    0    0    -1  
+$EndComp
+Text Label 5900 2400 0    60   ~ 0
+pogo_bypass
+Wire Wire Line
+	5600 2600 5600 2900
+Wire Wire Line
+	5850 2700 5850 2900
+Wire Wire Line
+	7700 1900 7700 2350
+Connection ~ 5850 2900
+Connection ~ 5600 1900
+Wire Wire Line
+	5600 1900 5600 2400
+Connection ~ 5750 1900
+Wire Wire Line
+	5750 1900 5750 2100
+Wire Wire Line
+	5750 2100 6100 2100
+Connection ~ 6900 2900
+Wire Wire Line
+	7700 1900 7950 1900
+Wire Wire Line
+	5850 2400 6100 2400
+Wire Wire Line
+	5600 2900 7700 2900
+Wire Wire Line
+	5500 1900 6100 1900
+$Comp
+L C_Small C13
+U 1 1 577E7520
+P 7700 2450
+F 0 "C13" H 7792 2496 50  0000 L CNN
+F 1 "2.2u" H 7792 2405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7700 2450 50  0001 C CNN
+F 3 "" H 7700 2450 50  0000 C CNN
+	1    7700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C14
+U 1 1 577E7527
+P 5600 2500
+F 0 "C14" H 5692 2546 50  0000 L CNN
+F 1 "1u" H 5692 2455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5600 2500 50  0001 C CNN
+F 3 "" H 5600 2500 50  0000 C CNN
+	1    5600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C15
+U 1 1 577E752E
+P 5850 2600
+F 0 "C15" H 5942 2646 50  0000 L CNN
+F 1 "10n" H 5942 2555 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5850 2600 50  0001 C CNN
+F 3 "" H 5850 2600 50  0000 C CNN
+	1    5850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2400 5850 2500
+Text Label 6400 2900 0    60   ~ 0
+pogo_gnd
+Text Label 5700 1900 0    60   ~ 0
+usb_vbus
+$Comp
+L Jumper_NC_Small JP5
+U 1 1 577E763C
+P 8050 1900
+F 0 "JP5" H 8050 2025 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 8060 1840 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8050 1900 50  0001 C CNN
+F 3 "" H 8050 1900 50  0000 C CNN
+	1    8050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1900 8550 1900
+Text Label 8200 1900 0    60   ~ 0
+tg_pwr
+Wire Wire Line
+	7700 2900 7700 2550
+Text Notes 7750 1600 0    60   ~ 0
+Jumper to enable 3.3V\npower from pogo-pins
 $EndSCHEMATC
