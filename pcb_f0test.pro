@@ -1,4 +1,4 @@
-update=Sun 05 Jun 2016 10:04:02 CEST
+update=Sun 10 Jul 2016 14:41:10 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/knielsen/devel/kicad/library
+LibDir=/home/knielsen/devel/kicad/library;/kvm/kicad/share/kicad/library/contrib_symbols_dl1eic
 [eeschema/libraries]
 LibName1=knielsenlib
 LibName2=power
@@ -59,3 +59,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+LibName31=SymbolsSimilarEN60617+oldDIN617-RevE8

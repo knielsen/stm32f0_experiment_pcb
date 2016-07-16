@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/knielsen/devel/study/f0_workshop/pcb_f0test/pcb_f0test.sch)
-    (date "Fri 08 Jul 2016 01:04:33 CEST")
+    (date "Sun 10 Jul 2016 14:24:12 CEST")
     (tool "Eeschema (2016-03-23 BZR 6647, Git bc699c8)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -253,6 +253,12 @@
       (libsource (lib conn) (part CONN_02X05))
       (sheetpath (names /) (tstamps /))
       (tstamp 5772A77B))
+    (comp (ref H1)
+      (value mounting_hole)
+      (footprint Mounting_Holes:MountingHole_3.2mm_M3)
+      (libsource (lib knielsenlib) (part mounting_hole))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 57824342))
     (comp (ref JP1)
       (value Jumper_NC_Small)
       (footprint Pin_Headers:Pin_Header_Straight_1x02)
@@ -803,14 +809,21 @@
         (pin (num 25) (name PB4) (type BiDi))
         (pin (num 26) (name PB5) (type BiDi))
         (pin (num 27) (name PB6) (type BiDi))
-        (pin (num 28) (name PB7) (type BiDi)))))
+        (pin (num 28) (name PB7) (type BiDi))))
+    (libpart (lib knielsenlib) (part mounting_hole)
+      (description "Mounting hole")
+      (footprints
+        (fp MountingHole*))
+      (fields
+        (field (name Reference) H)
+        (field (name Value) mounting_hole))))
   (libraries
+    (library (logical knielsenlib)
+      (uri /home/knielsen/devel/kicad/library/knielsenlib.lib))
     (library (logical device)
       (uri /kvm/kicad/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /kvm/kicad/share/kicad/library/conn.lib))
-    (library (logical knielsenlib)
-      (uri /home/knielsen/devel/kicad/library/knielsenlib.lib))
     (library (logical regul)
       (uri /kvm/kicad/share/kicad/library/regul.lib)))
   (nets

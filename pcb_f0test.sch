@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
 LIBS:pcb_f0test-cache
 EELAYER 25 0
 EELAYER END
