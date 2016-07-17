@@ -383,7 +383,7 @@ U 1 1 57548A5C
 P 7100 5500
 F 0 "LD6" H 7100 5741 40  0000 C CNN
 F 1 "RGB" H 7100 5665 40  0000 C CNN
-F 2 "knielsenlib:RGB_0603" H 6575 5575 60  0001 C CNN
+F 2 "knielsenlib:RGB_0603_ALTPINOUT" H 6575 5575 60  0001 C CNN
 F 3 "" H 6575 5575 60  0000 C CNN
 	1    7100 5500
 	1    0    0    -1  
@@ -408,16 +408,16 @@ Wire Wire Line
 Wire Wire Line
 	7200 5550 7400 5550
 Text Label 7650 5400 0    30   ~ 0
-ldr1
+ldr6
 Text Label 7650 5500 0    30   ~ 0
-ldg1
+ldg6
 Text Label 7650 5600 0    30   ~ 0
-ldb1
+ldb6
 $Comp
-L R_Small R2
+L R_Small R15
 U 1 1 57548D10
 P 7500 5400
-F 0 "R2" V 7450 5300 50  0000 C CNN
+F 0 "R15" V 7450 5300 50  0000 C CNN
 F 1 "560" V 7400 5450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 7500 5400 50  0001 C CNN
 F 3 "" H 7500 5400 50  0000 C CNN
@@ -436,10 +436,10 @@ F 3 "" H 7500 5500 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R6
+L R_Small R2
 U 1 1 57548DC6
 P 7500 5600
-F 0 "R6" V 7550 5500 50  0000 C CNN
+F 0 "R2" V 7550 5500 50  0000 C CNN
 F 1 "100" V 7600 5650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 7500 5600 50  0001 C CNN
 F 3 "" H 7500 5600 50  0000 C CNN
@@ -457,18 +457,18 @@ Wire Wire Line
 Wire Wire Line
 	7600 5600 7800 5600
 Text Label 7250 5450 0    30   ~ 0
-ildr1
+ildr6
 Text Label 7250 5500 0    30   ~ 0
-ildg1
+ildg6
 Text Label 7250 5550 0    30   ~ 0
-ildb1
+ildb6
 $Comp
 L RGB_LED_SMALL LD1
 U 1 1 57549913
 P 5850 4400
 F 0 "LD1" H 5850 4641 40  0000 C CNN
 F 1 "RGB" H 5850 4565 40  0000 C CNN
-F 2 "knielsenlib:RGB_0603" H 5325 4475 60  0001 C CNN
+F 2 "knielsenlib:RGB_0603_ALTPINOUT" H 5325 4475 60  0001 C CNN
 F 3 "" H 5325 4475 60  0000 C CNN
 	1    5850 4400
 	1    0    0    -1  
@@ -493,16 +493,16 @@ Wire Wire Line
 Wire Wire Line
 	5950 4450 6150 4450
 Text Label 6400 4300 0    30   ~ 0
-ldr2
+ldr1
 Text Label 6400 4400 0    30   ~ 0
-ldg2
+ldg1
 Text Label 6400 4500 0    30   ~ 0
-ldb2
+ldb1
 $Comp
-L R_Small R3
+L R_Small R5
 U 1 1 57549926
 P 6250 4300
-F 0 "R3" V 6200 4200 50  0000 C CNN
+F 0 "R5" V 6200 4200 50  0000 C CNN
 F 1 "560" V 6150 4350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 6250 4300 50  0001 C CNN
 F 3 "" H 6250 4300 50  0000 C CNN
@@ -510,10 +510,10 @@ F 3 "" H 6250 4300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R5
+L R_Small R7
 U 1 1 5754992C
 P 6250 4400
-F 0 "R5" V 6200 4550 50  0000 C CNN
+F 0 "R7" V 6200 4550 50  0000 C CNN
 F 1 "100" V 6250 4400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 6250 4400 50  0001 C CNN
 F 3 "" H 6250 4400 50  0000 C CNN
@@ -521,10 +521,10 @@ F 3 "" H 6250 4400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R7
+L R_Small R12
 U 1 1 57549932
 P 6250 4500
-F 0 "R7" V 6300 4400 50  0000 C CNN
+F 0 "R12" V 6300 4400 50  0000 C CNN
 F 1 "100" V 6350 4550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 6250 4500 50  0001 C CNN
 F 3 "" H 6250 4500 50  0000 C CNN
@@ -542,18 +542,18 @@ Wire Wire Line
 Wire Wire Line
 	6350 4500 6550 4500
 Text Label 6000 4350 0    30   ~ 0
-ildr2
+ildr1
 Text Label 6000 4400 0    30   ~ 0
-ildg2
+ildg1
 Text Label 6000 4450 0    30   ~ 0
-ildb2
+ildb1
 $Comp
 L RGB_LED_SMALL LD2
 U 1 1 57549EB8
 P 7100 4400
 F 0 "LD2" H 7100 4641 40  0000 C CNN
 F 1 "RGB" H 7100 4565 40  0000 C CNN
-F 2 "knielsenlib:RGB_0603" H 6575 4475 60  0001 C CNN
+F 2 "knielsenlib:RGB_0603_ALTPINOUT" H 6575 4475 60  0001 C CNN
 F 3 "" H 6575 4475 60  0000 C CNN
 	1    7100 4400
 	1    0    0    -1  
@@ -578,16 +578,16 @@ Wire Wire Line
 Wire Wire Line
 	7200 4450 7400 4450
 Text Label 7650 4300 0    30   ~ 0
-ldr3
+ldr2
 Text Label 7650 4400 0    30   ~ 0
-ldg3
+ldg2
 Text Label 7650 4500 0    30   ~ 0
-ldb3
+ldb2
 $Comp
-L R_Small R8
+L R_Small R3
 U 1 1 57549ECC
 P 7500 4300
-F 0 "R8" V 7450 4200 50  0000 C CNN
+F 0 "R3" V 7450 4200 50  0000 C CNN
 F 1 "560" V 7400 4350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 7500 4300 50  0001 C CNN
 F 3 "" H 7500 4300 50  0000 C CNN
@@ -606,10 +606,10 @@ F 3 "" H 7500 4400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R12
+L R_Small R13
 U 1 1 57549EDA
 P 7500 4500
-F 0 "R12" V 7550 4400 50  0000 C CNN
+F 0 "R13" V 7550 4400 50  0000 C CNN
 F 1 "100" V 7600 4550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 7500 4500 50  0001 C CNN
 F 3 "" H 7500 4500 50  0000 C CNN
@@ -627,18 +627,18 @@ Wire Wire Line
 Wire Wire Line
 	7600 4500 7800 4500
 Text Label 7250 4350 0    30   ~ 0
-ildr3
+ildr2
 Text Label 7250 4400 0    30   ~ 0
-ildg3
+ildg2
 Text Label 7250 4450 0    30   ~ 0
-ildb3
+ildb2
 $Comp
 L RGB_LED_SMALL LD3
 U 1 1 57549EE9
 P 5850 4950
 F 0 "LD3" H 5850 5191 40  0000 C CNN
 F 1 "RGB" H 5850 5115 40  0000 C CNN
-F 2 "knielsenlib:RGB_0603" H 5325 5025 60  0001 C CNN
+F 2 "knielsenlib:RGB_0603_ALTPINOUT" H 5325 5025 60  0001 C CNN
 F 3 "" H 5325 5025 60  0000 C CNN
 	1    5850 4950
 	1    0    0    -1  
@@ -663,16 +663,16 @@ Wire Wire Line
 Wire Wire Line
 	5950 5000 6150 5000
 Text Label 6400 4850 0    30   ~ 0
-ldr4
+ldr3
 Text Label 6400 4950 0    30   ~ 0
-ldg4
+ldg3
 Text Label 6400 5050 0    30   ~ 0
-ldb4
+ldb3
 $Comp
-L R_Small R9
+L R_Small R8
 U 1 1 57549EFD
 P 6250 4850
-F 0 "R9" V 6200 4750 50  0000 C CNN
+F 0 "R8" V 6200 4750 50  0000 C CNN
 F 1 "560" V 6150 4900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 6250 4850 50  0001 C CNN
 F 3 "" H 6250 4850 50  0000 C CNN
@@ -691,10 +691,10 @@ F 3 "" H 6250 4950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R13
+L R_Small R18
 U 1 1 57549F0B
 P 6250 5050
-F 0 "R13" V 6300 4950 50  0000 C CNN
+F 0 "R18" V 6300 4950 50  0000 C CNN
 F 1 "100" V 6350 5100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 6250 5050 50  0001 C CNN
 F 3 "" H 6250 5050 50  0000 C CNN
@@ -712,18 +712,18 @@ Wire Wire Line
 Wire Wire Line
 	6350 5050 6550 5050
 Text Label 6000 4900 0    30   ~ 0
-ildr4
+ildr3
 Text Label 6000 4950 0    30   ~ 0
-ildg4
+ildg3
 Text Label 6000 5000 0    30   ~ 0
-ildb4
+ildb3
 $Comp
 L RGB_LED_SMALL LD4
 U 1 1 5754A276
 P 7100 4950
 F 0 "LD4" H 7100 5191 40  0000 C CNN
 F 1 "RGB" H 7100 5115 40  0000 C CNN
-F 2 "knielsenlib:RGB_0603" H 6575 5025 60  0001 C CNN
+F 2 "knielsenlib:RGB_0603_ALTPINOUT" H 6575 5025 60  0001 C CNN
 F 3 "" H 6575 5025 60  0000 C CNN
 	1    7100 4950
 	1    0    0    -1  
@@ -748,16 +748,16 @@ Wire Wire Line
 Wire Wire Line
 	7200 5000 7400 5000
 Text Label 7650 4850 0    30   ~ 0
-ldr5
+ldr4
 Text Label 7650 4950 0    30   ~ 0
-ldg5
+ldg4
 Text Label 7650 5050 0    30   ~ 0
-ldb5
+ldb4
 $Comp
-L R_Small R14
+L R_Small R9
 U 1 1 5754A28A
 P 7500 4850
-F 0 "R14" V 7450 4750 50  0000 C CNN
+F 0 "R9" V 7450 4750 50  0000 C CNN
 F 1 "560" V 7400 4900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 7500 4850 50  0001 C CNN
 F 3 "" H 7500 4850 50  0000 C CNN
@@ -776,10 +776,10 @@ F 3 "" H 7500 4950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R18
+L R_Small R19
 U 1 1 5754A298
 P 7500 5050
-F 0 "R18" V 7550 4950 50  0000 C CNN
+F 0 "R19" V 7550 4950 50  0000 C CNN
 F 1 "100" V 7600 5100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 7500 5050 50  0001 C CNN
 F 3 "" H 7500 5050 50  0000 C CNN
@@ -797,18 +797,18 @@ Wire Wire Line
 Wire Wire Line
 	7600 5050 7800 5050
 Text Label 7250 4900 0    30   ~ 0
-ildr5
+ildr4
 Text Label 7250 4950 0    30   ~ 0
-ildg5
+ildg4
 Text Label 7250 5000 0    30   ~ 0
-ildb5
+ildb4
 $Comp
 L RGB_LED_SMALL LD5
 U 1 1 5754A2A7
 P 5850 5500
 F 0 "LD5" H 5850 5741 40  0000 C CNN
 F 1 "RGB" H 5850 5665 40  0000 C CNN
-F 2 "knielsenlib:RGB_0603" H 5325 5575 60  0001 C CNN
+F 2 "knielsenlib:RGB_0603_ALTPINOUT" H 5325 5575 60  0001 C CNN
 F 3 "" H 5325 5575 60  0000 C CNN
 	1    5850 5500
 	1    0    0    -1  
@@ -833,16 +833,16 @@ Wire Wire Line
 Wire Wire Line
 	5950 5550 6150 5550
 Text Label 6400 5400 0    30   ~ 0
-ldr6
+ldr5
 Text Label 6400 5500 0    30   ~ 0
-ldg6
+ldg5
 Text Label 6400 5600 0    30   ~ 0
-ldb6
+ldb5
 $Comp
-L R_Small R15
+L R_Small R14
 U 1 1 5754A2BB
 P 6250 5400
-F 0 "R15" V 6200 5300 50  0000 C CNN
+F 0 "R14" V 6200 5300 50  0000 C CNN
 F 1 "560" V 6150 5450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 6250 5400 50  0001 C CNN
 F 3 "" H 6250 5400 50  0000 C CNN
@@ -861,10 +861,10 @@ F 3 "" H 6250 5500 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R19
+L R_Small R6
 U 1 1 5754A2C9
 P 6250 5600
-F 0 "R19" V 6300 5500 50  0000 C CNN
+F 0 "R6" V 6300 5500 50  0000 C CNN
 F 1 "100" V 6350 5650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 6250 5600 50  0001 C CNN
 F 3 "" H 6250 5600 50  0000 C CNN
@@ -882,11 +882,11 @@ Wire Wire Line
 Wire Wire Line
 	6350 5600 6550 5600
 Text Label 6000 5450 0    30   ~ 0
-ildr6
+ildr5
 Text Label 6000 5500 0    30   ~ 0
-ildg6
+ildg5
 Text Label 6000 5550 0    30   ~ 0
-ildb6
+ildb5
 Wire Wire Line
 	1800 1650 1350 1650
 Wire Wire Line
@@ -924,41 +924,41 @@ Wire Wire Line
 Wire Wire Line
 	3200 2550 3600 2550
 Text Label 1500 2150 0    60   ~ 0
-ldr1
+ldb6
 Text Label 3300 1650 0    60   ~ 0
-ldg1
+ldg6
 Text Label 1500 2350 0    60   ~ 0
-ldb1
+ldb5
 Text Label 3300 1950 0    60   ~ 0
 ldr2
 Text Label 3300 2450 0    60   ~ 0
-ldg2
+ldr1
 Text Label 3300 2550 0    60   ~ 0
-ldb2
+ldg1
 Text Label 3300 2250 0    60   ~ 0
 ldr3
 Text Label 1500 2850 0    60   ~ 0
-ldg3
+ldg2
 Text Label 1500 1750 0    60   ~ 0
-ldb3
+ldb1
 Text Label 3300 2150 0    60   ~ 0
 ldr4
 Text Label 1500 2250 0    60   ~ 0
-ldg4
+ldg3
 Text Label 1500 1850 0    60   ~ 0
-ldb4
+ldb2
 Text Label 3300 1850 0    60   ~ 0
 ldr5
 Text Label 1500 1650 0    60   ~ 0
-ldg5
+ldg4
 Text Label 1500 1950 0    60   ~ 0
-ldb5
+ldb3
 Text Label 3300 2050 0    60   ~ 0
 ldr6
 Text Label 1500 2050 0    60   ~ 0
-ldg6
+ldg5
 Text Label 3300 1750 0    60   ~ 0
-ldb6
+ldb4
 $Sheet
 S 8900 1050 1550 1150
 U 576F9AE1
